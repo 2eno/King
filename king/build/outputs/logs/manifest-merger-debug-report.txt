@@ -1,0 +1,210 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:18:1-46:12
+INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:18:1-46:12
+INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:18:1-46:12
+INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:18:1-46:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/2c123a3b0131ca7345c2c03edd51f300/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-games:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-games-11.6.2.aar/7c7fe2a0ac00a33ec065c74b7f0efda9/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-auth:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.6.2.aar/cb872a1ab2a02807818b8ca30613409c/AndroidManifest.xml:16:1-26:12
+MERGED from [com.google.android.gms:play-services-drive:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.6.2.aar/96436c82b534a3761a6133c407f1acf4/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.6.2.aar/8b256a45a60b2344d9ea67d7c557e17f/AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.android.gms:play-services-auth-base:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.6.2.aar/b5c7c5f85da1ead1f3da1da938704846/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-base:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/35884be6efb5ee2a5240c21660b4f020/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.2.aar/4c84ad7f55528c93883ccf881aa730c7/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/cff8102a259af7fb11391bcf20436b1d/AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/841a1faf9d964163dacfed4a93432d8a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/c3877772c42e4c3443aa0657693e577a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/9c00243e739a3b993be4299956273e74/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/dc3ff6182b5ffad8438aeb288cd36218/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/f3c3ad70238683580b15e02cff2a8e2a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/9879a521066925a3fe412af3c0a770fb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/71f21852c41b0b678b5af9912958a7f9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/8644259499ebbf94ea02e26d162c87c8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-games-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-games-license-11.6.2.aar/1c180ab0cee4438f6483cf9564ed353b/AndroidManifest.xml:2:1-6:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/zeno/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/967407e4d075badb97c5ed81ad7d135c/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.2.aar/af436b0280dbc47cce52ca7d59a78e9b/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.2.aar/ebd42aaa0f6cce9a806fd1119f2767a1/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-drive-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-drive-license-11.6.2.aar/5134320ebf00d06299c9fd318551a390/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.2.aar/2d2eeaf5f7223efdac8a096c0e237fe7/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.6.2.aar/05397f249d063ca97fd78fbc27ac07b9/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.6.2.aar/30873d77bbbe6242575b6397b91e9b46/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:18:1-46:12
+INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:18:1-46:12
+INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:18:1-46:12
+	package
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:19:5-36
+		INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+		INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:18:1-46:12
+		INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:18:1-46:12
+		INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:18:11-69
+application
+ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:22:5-45:19
+MERGED from [com.google.android.gms:play-services-games:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-games-11.6.2.aar/7c7fe2a0ac00a33ec065c74b7f0efda9/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-games-11.6.2.aar/7c7fe2a0ac00a33ec065c74b7f0efda9/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-auth:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.6.2.aar/cb872a1ab2a02807818b8ca30613409c/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-auth:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.6.2.aar/cb872a1ab2a02807818b8ca30613409c/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-drive:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.6.2.aar/96436c82b534a3761a6133c407f1acf4/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.6.2.aar/96436c82b534a3761a6133c407f1acf4/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/35884be6efb5ee2a5240c21660b4f020/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/35884be6efb5ee2a5240c21660b4f020/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.2.aar/4c84ad7f55528c93883ccf881aa730c7/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.2.aar/4c84ad7f55528c93883ccf881aa730c7/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/cff8102a259af7fb11391bcf20436b1d/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/cff8102a259af7fb11391bcf20436b1d/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-games-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-games-license-11.6.2.aar/1c180ab0cee4438f6483cf9564ed353b/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-games-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-games-license-11.6.2.aar/1c180ab0cee4438f6483cf9564ed353b/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.2.aar/af436b0280dbc47cce52ca7d59a78e9b/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.2.aar/af436b0280dbc47cce52ca7d59a78e9b/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.2.aar/ebd42aaa0f6cce9a806fd1119f2767a1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.2.aar/ebd42aaa0f6cce9a806fd1119f2767a1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-drive-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-drive-license-11.6.2.aar/5134320ebf00d06299c9fd318551a390/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-drive-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-drive-license-11.6.2.aar/5134320ebf00d06299c9fd318551a390/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.2.aar/2d2eeaf5f7223efdac8a096c0e237fe7/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.2.aar/2d2eeaf5f7223efdac8a096c0e237fe7/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.6.2.aar/05397f249d063ca97fd78fbc27ac07b9/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.6.2.aar/05397f249d063ca97fd78fbc27ac07b9/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.6.2.aar/30873d77bbbe6242575b6397b91e9b46/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.6.2.aar/30873d77bbbe6242575b6397b91e9b46/AndroidManifest.xml:5:5-20
+	android:label
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:24:9-41
+	android:fullBackupContent
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:26:9-42
+	android:icon
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:23:9-45
+	android:allowBackup
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:25:9-36
+	android:theme
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:27:9-40
+meta-data#com.google.android.gms.games.APP_ID
+ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:29:9-30:45
+	android:value
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:30:13-43
+	android:name
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:29:20-70
+meta-data#com.google.android.gms.version
+ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:31:9-32:68
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/cff8102a259af7fb11391bcf20436b1d/AndroidManifest.xml:20:9-121
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/cff8102a259af7fb11391bcf20436b1d/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:32:13-66
+	android:name
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:31:20-65
+activity#eu.zipf.zeno.games.bc.MainActivity
+ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:34:9-44:20
+	android:screenOrientation
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:38:13-49
+	android:label
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:36:13-45
+	android:allowBackup
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:37:13-40
+	android:name
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:35:13-62
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:39:13-43:29
+action#android.intent.action.MAIN
+ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:40:17-68
+	android:name
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:40:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:42:17-76
+	android:name
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml:42:27-74
+uses-sdk
+INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/2c123a3b0131ca7345c2c03edd51f300/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/2c123a3b0131ca7345c2c03edd51f300/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-games:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-games-11.6.2.aar/7c7fe2a0ac00a33ec065c74b7f0efda9/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-games:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-games-11.6.2.aar/7c7fe2a0ac00a33ec065c74b7f0efda9/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.6.2.aar/cb872a1ab2a02807818b8ca30613409c/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.6.2.aar/cb872a1ab2a02807818b8ca30613409c/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-drive:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.6.2.aar/96436c82b534a3761a6133c407f1acf4/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-drive:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.6.2.aar/96436c82b534a3761a6133c407f1acf4/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.6.2.aar/8b256a45a60b2344d9ea67d7c557e17f/AndroidManifest.xml:3:3-41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.6.2.aar/8b256a45a60b2344d9ea67d7c557e17f/AndroidManifest.xml:3:3-41
+MERGED from [com.google.android.gms:play-services-auth-base:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.6.2.aar/b5c7c5f85da1ead1f3da1da938704846/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.6.2.aar/b5c7c5f85da1ead1f3da1da938704846/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/35884be6efb5ee2a5240c21660b4f020/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/35884be6efb5ee2a5240c21660b4f020/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.2.aar/4c84ad7f55528c93883ccf881aa730c7/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.6.2.aar/4c84ad7f55528c93883ccf881aa730c7/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/cff8102a259af7fb11391bcf20436b1d/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/cff8102a259af7fb11391bcf20436b1d/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/841a1faf9d964163dacfed4a93432d8a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/841a1faf9d964163dacfed4a93432d8a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/c3877772c42e4c3443aa0657693e577a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/c3877772c42e4c3443aa0657693e577a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/9c00243e739a3b993be4299956273e74/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/9c00243e739a3b993be4299956273e74/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/dc3ff6182b5ffad8438aeb288cd36218/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/dc3ff6182b5ffad8438aeb288cd36218/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/f3c3ad70238683580b15e02cff2a8e2a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/f3c3ad70238683580b15e02cff2a8e2a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/9879a521066925a3fe412af3c0a770fb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/9879a521066925a3fe412af3c0a770fb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/71f21852c41b0b678b5af9912958a7f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/71f21852c41b0b678b5af9912958a7f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/8644259499ebbf94ea02e26d162c87c8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/8644259499ebbf94ea02e26d162c87c8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-games-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-games-license-11.6.2.aar/1c180ab0cee4438f6483cf9564ed353b/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-games-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-games-license-11.6.2.aar/1c180ab0cee4438f6483cf9564ed353b/AndroidManifest.xml:4:5-43
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/zeno/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/967407e4d075badb97c5ed81ad7d135c/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/zeno/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/967407e4d075badb97c5ed81ad7d135c/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.2.aar/af436b0280dbc47cce52ca7d59a78e9b/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.6.2.aar/af436b0280dbc47cce52ca7d59a78e9b/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.2.aar/ebd42aaa0f6cce9a806fd1119f2767a1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.6.2.aar/ebd42aaa0f6cce9a806fd1119f2767a1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-drive-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-drive-license-11.6.2.aar/5134320ebf00d06299c9fd318551a390/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-drive-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-drive-license-11.6.2.aar/5134320ebf00d06299c9fd318551a390/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.2.aar/2d2eeaf5f7223efdac8a096c0e237fe7/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.6.2.aar/2d2eeaf5f7223efdac8a096c0e237fe7/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.6.2.aar/05397f249d063ca97fd78fbc27ac07b9/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.6.2.aar/05397f249d063ca97fd78fbc27ac07b9/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.6.2.aar/30873d77bbbe6242575b6397b91e9b46/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.6.2.aar/30873d77bbbe6242575b6397b91e9b46/AndroidManifest.xml:4:5-43
+INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+		INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+		ADDED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+		INJECTED from /Users/zeno/AndroidStudioProjects/King/king/src/main/AndroidManifest.xml
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.6.2.aar/cb872a1ab2a02807818b8ca30613409c/AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.6.2.aar/cb872a1ab2a02807818b8ca30613409c/AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.6.2.aar/cb872a1ab2a02807818b8ca30613409c/AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.6.2.aar/cb872a1ab2a02807818b8ca30613409c/AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.6.2.aar/cb872a1ab2a02807818b8ca30613409c/AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.6.2.aar/cb872a1ab2a02807818b8ca30613409c/AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.6.2.aar/cb872a1ab2a02807818b8ca30613409c/AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.6.2.aar/cb872a1ab2a02807818b8ca30613409c/AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.6.2.aar/cb872a1ab2a02807818b8ca30613409c/AndroidManifest.xml:24:18-63
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/35884be6efb5ee2a5240c21660b4f020/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/35884be6efb5ee2a5240c21660b4f020/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/35884be6efb5ee2a5240c21660b4f020/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.6.2] /Users/zeno/.gradle/caches/transforms-1/files-1.1/play-services-base-11.6.2.aar/35884be6efb5ee2a5240c21660b4f020/AndroidManifest.xml:19:19-85
