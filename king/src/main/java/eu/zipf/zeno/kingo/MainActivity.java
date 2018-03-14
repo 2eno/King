@@ -230,7 +230,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     void startQuickGame() {
         // quick-start a game with one randomly selected opponent
-        final int MIN_OPPONENTS = 2, MAX_OPPONENTS = 2;
+        final int MIN_OPPONENTS = 1, MAX_OPPONENTS = 2;
         Bundle autoMatchCriteria = RoomConfig.createAutoMatchCriteria(MIN_OPPONENTS,
                 MAX_OPPONENTS, 0);
         UpdateUI.switchToScreen(R.id.screen_wait);

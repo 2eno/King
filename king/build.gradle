@@ -8,10 +8,10 @@ android {
 
         applicationId "eu.zipf.zeno.games.bc"
 
-        minSdkVersion android_min_sdk_version
+        minSdkVersion 19
         targetSdkVersion android_compile_version
         versionCode 1
-        versionName "1.0"
+        versionName "one.0"
     }
 
     buildTypes {

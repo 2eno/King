@@ -1096,10 +1096,6 @@
         "source": "/Users/zeno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/2c123a3b0131ca7345c2c03edd51f300/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "/Users/zeno/AndroidStudioProjects/King/king/build/intermediates/res/merged/androidTest/debug/layout_notification_template_custom_big.xml.flat",
-        "source": "/Users/zeno/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/8644259499ebbf94ea02e26d162c87c8/res/layout/notification_template_custom_big.xml"
-    },
-    {
         "merged": "/Users/zeno/AndroidStudioProjects/King/king/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/Users/zeno/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/2c123a3b0131ca7345c2c03edd51f300/res/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
