@@ -17,49 +17,49 @@
             android:id="@+id/dice_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="20"
             android:layout_margin="1dp"
-            android:background="@drawable/attack" />
+            android:background="@drawable/one" />
 
         <ToggleButton
             android:id="@+id/dice_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="20"
             android:layout_margin="1dp"
-            android:background="@drawable/attack" />
+            android:background="@drawable/one" />
 
         <ToggleButton
             android:id="@+id/dice_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="20"
             android:layout_margin="1dp"
-            android:background="@drawable/attack" />
+            android:background="@drawable/one" />
 
         <ToggleButton
             android:id="@+id/dice_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="20"
             android:layout_margin="1dp"
-            android:background="@drawable/attack" />
+            android:background="@drawable/one" />
 
         <ToggleButton
             android:id="@+id/dice_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="20"
             android:layout_margin="1dp"
-            android:background="@drawable/attack" />
+            android:background="@drawable/one" />
 
         <ToggleButton
             android:id="@+id/dice_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="20"
             android:layout_margin="1dp"
-            android:background="@drawable/attack" />
+            android:background="@drawable/one" />
     </LinearLayout>
 
     <Button
