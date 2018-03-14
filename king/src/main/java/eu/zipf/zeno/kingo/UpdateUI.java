@@ -1,17 +1,19 @@
-package eu.zipf.zeno.games.bc;
+package eu.zipf.zeno.kingo;
 
 import android.app.Activity;
 import android.view.View;
 import android.widget.TextView;
 
+import eu.zipf.zeno.kingo.bc.R;
+
 /**
- * Created by zeno on 11.03.18.
+ * Created by 2eno on 11.03.18.
  */
 
 public class UpdateUI {
 
     static Activity activity = new Activity();
-    public static void setActivity(Activity _activity){
+    static void setActivity(Activity _activity){
         activity = _activity;
     }
 
@@ -23,7 +25,8 @@ public class UpdateUI {
     // event handlers.
     final static int[] CLICKABLES = {
             R.id.button_accept_popup_invitation, R.id.button_invite_players,
-            R.id.button_quick_game, R.id.button_see_invitations, R.id.button_sign_in
+            R.id.button_quick_game, R.id.button_see_invitations, R.id.button_sign_in,
+            R.id.button_sign_out
     };
 
     // This array lists all the individual screens our game has.
@@ -31,9 +34,9 @@ public class UpdateUI {
             R.id.screen_game, R.id.screen_main, R.id.screen_sign_in,
             R.id.screen_wait
     };
-    public static int mCurScreen = -1;
+    static int mCurScreen = -1;
 
-    public static int[] getClickables() {
+    static int[] getClickables() {
            return CLICKABLES;
     }
 
@@ -70,14 +73,7 @@ public class UpdateUI {
         ((TextView) activity.findViewById(R.id.my_score)).setText("Test");
     }
 
-    // formats a score as a three-digit number
-    String formatScore(int i) {
-        if (i < 0) {
-            i = 0;
-        }
-        String s = String.valueOf(i);
-        return s.length() == 1 ? "00" + s : s.length() == 2 ? "0" + s : s;
-    }
+
 
     // updates the screen with the scores from our peers
     static void updatePeerScoresDisplay() {

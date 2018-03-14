@@ -1,4 +1,4 @@
-package eu.zipf.zeno.games.bc;
+package eu.zipf.zeno.kingo;
 
 public class DiceSet {
     private Dice[] diceSet;
@@ -47,7 +47,7 @@ public class DiceSet {
         return this.size;
     }
 
-    public void reroll(int[] index) {
+    public void reroll(byte[] index) {
         for (int i = 0; i < index.length; i++) {
             if (index[i] > diceSet.length) {
                 System.err.println("OUT OF BOUNDS@reroll");

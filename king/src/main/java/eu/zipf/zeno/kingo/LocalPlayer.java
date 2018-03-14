@@ -1,16 +1,17 @@
-package eu.zipf.zeno.games.bc;
+package eu.zipf.zeno.kingo;
 
 import java.util.ArrayList;
 
-public class Player {
+public class LocalPlayer {
     private String name;
-    private int hp, energy, score, maxHp;
+    private int hp, energy, score, maxHp, playerID;
     private ArrayList<Card> cards;
     private boolean inTokyo = false;
     //public boolean mayLeave;
 
-    public Player(String name) {
+    public LocalPlayer(String name, int playerID) {
         this.name = name;
+        this.playerID = playerID;
         this.hp = 10;
         this.maxHp = 10;
         this.energy = 0;
@@ -37,13 +38,13 @@ public class Player {
     public void joinTokyo() {
         //this.mayLeave = false;
         this.inTokyo = true;
-        Tokyo.setPlayer(this);
+        Tokyo.setLocalPlayer(this);
         System.out.println(this.getName()+" joined Tokyo");
         addScore(1);
     }
     public void leaveTokyo(){
         this.inTokyo = false;
-        Tokyo.setPlayer(null);
+        Tokyo.setLocalPlayer(null);
         System.out.println(this.getName()+" left Tokyo");
     }
 
