@@ -154,79 +154,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.button_sign_in:
-                // start the sign-in flow
-                Log.d(TAG, "Sign-in button clicked");
-                startSignInIntent();
-                break;
-            case R.id.button_sign_out:
-                // user wants to sign out
-                // sign out.
-                Log.d(TAG, "Sign-out button clicked");
-                signOut();
-                UpdateUI.switchToScreen(R.id.screen_sign_in);
-                break;
-            case R.id.button_invite_players:
-                UpdateUI.switchToScreen(R.id.screen_wait);
-                Log.d(TAG, "Sign-out button clicked");
-                // show list of invitable localPlayers
-                mRealTimeMultiplayerClient.getSelectOpponentsIntent(1, 3).addOnSuccessListener(
-                        new OnSuccessListener<Intent>() {
-                            @Override
-                            public void onSuccess(Intent intent) {
-                                startActivityForResult(intent, RC_SELECT_PLAYERS);
-                            }
-                        }
-                ).addOnFailureListener(createFailureListener("There was a problem selecting opponents."));
-                break;
-            case R.id.button_see_invitations:
-                UpdateUI.switchToScreen(R.id.screen_wait);
-
-                // show list of pending invitations
-                mInvitationsClient.getInvitationInboxIntent().addOnSuccessListener(
-                        new OnSuccessListener<Intent>() {
-                            @Override
-                            public void onSuccess(Intent intent) {
-                                startActivityForResult(intent, RC_INVITATION_INBOX);
-                            }
-                        }
-                ).addOnFailureListener(createFailureListener("There was a problem getting the inbox."));
-                break;
-            case R.id.button_accept_popup_invitation:
-                // user wants to accept the invitation shown on the invitation popup
-                // (the one we got through the OnInvitationReceivedListener).
-                acceptInviteToRoom(mIncomingInvitationId);
-                mIncomingInvitationId = null;
-                break;
-            case R.id.button_quick_game:
-                // user wants to play against a random opponent right now
-                startQuickGame();
-                break;
-            case R.id.button_roll:
-                if (rollCnt % 4 == 0) {
-                    game.rollDices();
-                } else {
-                    game.rerollDices(getReroll());
-                }
-                rollCnt++;
-                game.broadcastDice();
-                updateDices(game.dc.getScores());
-                if (rollCnt % 4 == 3) {
-                    rollCnt++;  //TODO: ?????
-                    nextPlayer();
-                }
-                break;
-            case R.id.button_next:
-                setupWait();
-                broadcastReset();
-                broadcast((byte)11);
-
-            //Hier kommen dann eventuell noch andere Buttons hinzu.
-        }
-    }
 
     void startQuickGame() {
         // quick-start a game with one randomly selected opponent
@@ -853,7 +780,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     // Game tick -- update countdown, check if game ended.
     void gameTick() {
-        game.updateDices();
 
     }
 
@@ -903,16 +829,79 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
 
-    //HIER KOMMT DER PART DER VORHER MULTIPLAYER WAR
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.button_sign_in:
+                // start the sign-in flow
+                Log.d(TAG, "Sign-in button clicked");
+                startSignInIntent();
+                break;
+            case R.id.button_sign_out:
+                // user wants to sign out
+                // sign out.
+                Log.d(TAG, "Sign-out button clicked");
+                signOut();
+                UpdateUI.switchToScreen(R.id.screen_sign_in);
+                break;
+            case R.id.button_invite_players:
+                UpdateUI.switchToScreen(R.id.screen_wait);
+                Log.d(TAG, "Sign-out button clicked");
+                // show list of invitable localPlayers
+                mRealTimeMultiplayerClient.getSelectOpponentsIntent(1, 3).addOnSuccessListener(
+                        new OnSuccessListener<Intent>() {
+                            @Override
+                            public void onSuccess(Intent intent) {
+                                startActivityForResult(intent, RC_SELECT_PLAYERS);
+                            }
+                        }
+                ).addOnFailureListener(createFailureListener("There was a problem selecting opponents."));
+                break;
+            case R.id.button_see_invitations:
+                UpdateUI.switchToScreen(R.id.screen_wait);
 
+                // show list of pending invitations
+                mInvitationsClient.getInvitationInboxIntent().addOnSuccessListener(
+                        new OnSuccessListener<Intent>() {
+                            @Override
+                            public void onSuccess(Intent intent) {
+                                startActivityForResult(intent, RC_INVITATION_INBOX);
+                            }
+                        }
+                ).addOnFailureListener(createFailureListener("There was a problem getting the inbox."));
+                break;
+            case R.id.button_accept_popup_invitation:
+                // user wants to accept the invitation shown on the invitation popup
+                // (the one we got through the OnInvitationReceivedListener).
+                acceptInviteToRoom(mIncomingInvitationId);
+                mIncomingInvitationId = null;
+                break;
+            case R.id.button_quick_game:
+                // user wants to play against a random opponent right now
+                startQuickGame();
+                break;
+            case R.id.button_roll:
+                if (rollCnt % 4 == 0) {
+                    game.rollDice();
+                } else {
+                    game.rerollDices(getReroll());
+                }
+                rollCnt++;
+                game.broadcastDice();
+                updateDices(game.dc.getScores());
+                if (rollCnt % 4 == 3) {
+                    rollCnt++;  //TODO: ?????
+                    nextPlayer();
+                }
+                break;
+            case R.id.button_next:
+                setupWait();
+                broadcastReset();
+                broadcast((byte) 11);
 
-
-
-
-
-
-
-
+                //Hier kommen dann eventuell noch andere Buttons hinzu.
+        }
+    }
 
 
         /*
@@ -969,7 +958,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     public static void broadcastReset() {
-       byte[] toSend = {10,1,1,1,1,1,1};
+        byte[] toSend = {10, 1, 1, 1, 1, 1, 1};
         broadcast(toSend);
     }
 
@@ -991,22 +980,22 @@ public class MainActivity extends Activity implements View.OnClickListener {
         for (int i = modifier; i < (scores.length); i++) {
             Button b = findViewById(R.id.dice_1 + i - modifier);
             switch (scores[i]) {
-                case Dice.ENERGY:
+                case Die.ENERGY:
                     b.setBackgroundResource(R.drawable.energy);
                     break;
-                case Dice.SMASH:
+                case Die.SMASH:
                     b.setBackgroundResource(R.drawable.attack);
                     break;
-                case Dice.HEAL:
+                case Die.HEAL:
                     b.setBackgroundResource(R.drawable.health);
                     break;
-                case Dice.ONE:
+                case Die.ONE:
                     b.setBackgroundResource(R.drawable.one);
                     break;
-                case Dice.TWO:
+                case Die.TWO:
                     b.setBackgroundResource(R.drawable.two);
                     break;
-                case Dice.THREE:
+                case Die.THREE:
                     b.setBackgroundResource(R.drawable.three);
                     break;
                 default:
@@ -1018,7 +1007,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     public byte[] getReroll() {
         ArrayList toCast = new ArrayList();
-        for (int i = 0; i < game.getDiceSet().getSize(); i++) {
+        for (int i = 0; i < game.getDice().getSize(); i++) {
             ToggleButton b = findViewById(R.id.dice_1 + i);
             if (!b.isChecked()) {
                 toCast.add((byte) i);
@@ -1033,7 +1022,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
         findViewById(R.id.button_next).setVisibility(View.VISIBLE);
         findViewById(R.id.button_next).setOnClickListener(this);
         findViewById(R.id.button_roll).setEnabled(false);
+        //game.resolveDice();
     }
+
     public void myTurn() {
         findViewById(R.id.button_next).setVisibility(View.GONE);
         findViewById(R.id.button_roll).setEnabled(true);

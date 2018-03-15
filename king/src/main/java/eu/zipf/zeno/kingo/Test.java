@@ -9,7 +9,7 @@ public class Test {
     public Test() {
 
         Scanner sc = new Scanner(System.in);
-        DiceSet dc = new DiceSet(6);
+        Dice dc = new Dice(6);
         localPlayers = new ArrayList<LocalPlayer>();
         LocalPlayer p1 = new LocalPlayer("Manu",0);
         localPlayers.add(p1);

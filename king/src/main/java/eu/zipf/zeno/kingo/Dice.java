@@ -1,24 +1,79 @@
 package eu.zipf.zeno.kingo;
 
 public class Dice {
-    public final static byte ONE = 1, TWO = 2, THREE = 3, SMASH = 4, ENERGY = 5, HEAL = 6;
-    public String[] names ={"one","two","three","SMASH","ENERGY","HEAL"};
+    private Die[] diceSet;
+    private int size;
 
-    private byte score;
-
-    public Dice() {
-        this.score = 0;
+    public Dice(int size) {
+        this.size = size;
+        this.diceSet = new Die[size];
+        for (int i = 0; i < diceSet.length; i++) {
+            diceSet[i] = new Die();
+        }
     }
 
     public void roll() {
-        this.score = (byte) (Math.random() * 6 + ONE);
+        for (int i = 0; i < diceSet.length; i++) {
+            diceSet[i].roll();
+        }
     }
 
-    public byte getScore() {
-        return this.score;
-    }
-    public String getName(){
-        return names[this.score-ONE];
+    public byte[] getScores() {
+        byte[] ret = new byte[diceSet.length];
+        for (int i = 0; i < diceSet.length; i++) {
+            ret[i] = diceSet[i].getScore();
+        }
+        return ret;
     }
 
+    public String[] getNames() {
+        String[] ret = new String[diceSet.length];
+        for (int i = 0; i < diceSet.length; i++) {
+            ret[i] = diceSet[i].getName();
+        }
+        return ret;
+    }
+
+    public void print() {
+        String out = "";
+        for (int i = 0; i < diceSet.length; i++) {
+            out += (diceSet[i].getName() + ", ");
+        }
+        out = out.substring(0, out.length() - 2);
+        System.out.println(out);
+    }
+
+    public int getSize() {
+        return this.size;
+    }
+
+    public void reroll(byte[] index) {
+        for (int i = 0; i < index.length; i++) {
+            if (index[i] > diceSet.length) {
+                System.err.println("OUT OF BOUNDS@reroll");
+                return;
+            }
+            diceSet[index[i]].roll();
+        }
+    }
+
+    public int getHeal() {
+        int cnt = 0;
+        for (int i = 0; i < diceSet.length; i++) {
+            if (diceSet[i].getScore() == Die.HEAL) {
+                cnt++;
+            }
+        }
+        return cnt;
+    }
+
+    public int getDamage() {
+        int cnt = 0;
+        for (int i = 0; i < diceSet.length; i++) {
+            if (diceSet[i].getScore() == Die.SMASH) {
+                cnt++;
+            }
+        }
+        return cnt;
+    }
 }

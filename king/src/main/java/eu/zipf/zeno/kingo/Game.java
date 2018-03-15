@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Game {
     ArrayList<LocalPlayer> players;
     ArrayList<ToggleButton> dices;
-    static DiceSet dc;
+    static Dice dc;
     int participantCnt;
     public static byte DICE_RESULTS = 10;
 
@@ -21,7 +21,7 @@ public class Game {
 
     private void initialize() {
         players = new ArrayList<>();
-        dc = new DiceSet(6);
+        dc = new Dice(6);
         this.participantCnt = MainActivity.mParticipants.size();
         fillPlayers();
     }
@@ -36,18 +36,12 @@ public class Game {
         }
     }
 
-    public static void updateDices() {
-        dc.getScores();
-        //updateUI
-    }
-
-
     public static void main(String args[]) {
         new Game();
 
     }
 
-    public static void rollDices() {
+    public static void rollDice() {
         dc.roll();
         Log.d(MainActivity.TAG, "Buttong R0LL");
     }
@@ -66,7 +60,7 @@ public class Game {
        MainActivity.broadcast(toBrod);
     }
 
-    public DiceSet getDiceSet(){
+    public Dice getDice(){
         return dc;
     }
 
