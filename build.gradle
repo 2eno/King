@@ -1,35 +1,28 @@
-// this is the parent build configuration for all the sample projects.
-// for more information on gradle build files when used in a multi-project build, see
-// http://gradle.org/docs/current/userguide/multi_project_builds.html
-
+// Every Gradle plugin lives on the root build classpath so the Kotlin plugin and the Android
+// plugin share one classloader. The Android plugin is only added when the :app module is built.
 buildscript {
+    def skipAndroid = (findProperty('monsterMayor.skipAndroid') ?: 'false').toBoolean()
+
     repositories {
-        google()
-        jcenter()
+        mavenCentral()
+        google {
+            content {
+                includeGroupByRegex 'com\\.android.*'
+                includeGroupByRegex 'com\\.google\\.android.*'
+                includeGroupByRegex 'com\\.google\\.testing.*'
+                includeGroupByRegex 'androidx.*'
+            }
+        }
+        gradlePluginPortal()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath libs.kotlin.gradle.plugin
+        classpath libs.kotlin.serialization.gradle.plugin
+        classpath libs.kotlin.compose.gradle.plugin
+        classpath libs.ksp.gradle.plugin
+        if (!skipAndroid) {
+            classpath libs.android.gradle.plugin
+        }
     }
 }
-
-// allprojects apply to every project
-allprojects {
-    repositories {
-        google()
-        jcenter()
-    }
-
-    ext {
-        android_compile_version = 26
-
-        // Google Play Services minimum requirements is 14
-        android_min_sdk_version = 14
-
-        appcompat_library_version = '27.0.2'
-        support_library_version = '27.0.2'
-        gms_library_version = '11.6.2'
-    }
-}
-
-

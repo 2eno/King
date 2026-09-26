@@ -1,3 +1,41 @@
-include ':king'
+pluginManagement {
+    repositories {
+        mavenCentral()
+        google {
+            content {
+                includeGroupByRegex 'com\\.android.*'
+                includeGroupByRegex 'com\\.google\\.android.*'
+                includeGroupByRegex 'com\\.google\\.testing.*'
+                includeGroupByRegex 'androidx.*'
+            }
+        }
+        gradlePluginPortal()
+    }
+}
 
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+        google {
+            content {
+                includeGroupByRegex 'com\\.android.*'
+                includeGroupByRegex 'com\\.google\\.android.*'
+                includeGroupByRegex 'com\\.google\\.testing.*'
+                includeGroupByRegex 'androidx.*'
+            }
+        }
+    }
+}
 
+rootProject.name = 'MonsterMayor'
+
+// Pure Kotlin/JVM modules: game rules, network protocol, online client and the Ktor room server.
+include ':core', ':client', ':server'
+
+// The Android app needs the Android SDK and Google Maven. Build the JVM modules alone with
+// ./gradlew -PmonsterMayor.skipAndroid=true test
+// The legacy Java prototype in ./king is intentionally no longer part of the build.
+if (!(providers.gradleProperty('monsterMayor.skipAndroid').getOrElse('false').toBoolean())) {
+    include ':app'
+}
