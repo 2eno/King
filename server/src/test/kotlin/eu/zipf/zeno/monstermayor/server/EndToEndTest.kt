@@ -11,6 +11,8 @@ import eu.zipf.zeno.monstermayor.core.net.RoomStatus
 import io.ktor.client.plugins.websocket.WebSockets
 import io.ktor.server.testing.testApplication
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.CoroutineStart
+import kotlinx.coroutines.async
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.flow.first
@@ -68,8 +70,11 @@ class EndToEndTest {
                 assertEquals(held, alice.game.first { it?.revision == held.revision })
 
                 val bystander = if (active === alice) bob else alice
+                // Subscribe before submitting: notices are not replayed, and the rejection can arrive
+                // before a late subscriber starts collecting.
+                val notice = async(start = CoroutineStart.UNDISPATCHED) { bystander.notices.first() }
                 bystander.submit(GameIntent.ResolveDice)
-                assertTrue(bystander.notices.first().startsWith("Waiting for"))
+                assertTrue(notice.await().startsWith("Waiting for"))
             }
         } finally {
             clientScope.cancel()
