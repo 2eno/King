@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A monster head with a crown on a 108dp adaptive-icon canvas (safe zone: central 66dp). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- crown -->
+    <path
+        android:fillColor="#FFFFC107"
+        android:pathData="M36,40 L40,26 L47,34 L54,22 L61,34 L68,26 L72,40 Z" />
+    <!-- head -->
+    <path
+        android:fillColor="#FF66BB6A"
+        android:pathData="M32,58 C32,45 42,40 54,40 C66,40 76,45 76,58 L76,80 C76,84 73,86 70,86 L38,86 C35,86 32,84 32,80 Z" />
+    <!-- eyes -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M40,56 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0 M56,56 a6,6 0 1,0 12,0 a6,6 0 1,0 -12,0" />
+    <path
+        android:fillColor="#FF1B1030"
+        android:pathData="M44,57 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0 M60,57 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" />
+    <!-- teeth -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M42,72 L66,72 L63,78 L60,72 L57,78 L54,72 L51,78 L48,72 L45,78 Z" />
+</vector>
