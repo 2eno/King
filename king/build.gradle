@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
 
-        applicationId "eu.zipf.zeno.games.bc"
+        applicationId "dev.eno2.king"
 
         minSdkVersion 19
         targetSdkVersion android_compile_version
